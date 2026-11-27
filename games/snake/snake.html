@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade - SnakeGame</title>
+    <link rel="stylesheet" href="snake.css">
+    <script src="snake.js"></script>
+</head>
+<body>
+
+    <a href="/index.html" class="btn-logo">
+        <img src="/image/logo.png" alt="logoFriv" width="100" height="100">
+    </a>
+
+    <div class="game-container">
+        <b href="/index.html" class="btn-return">Retornar</b>
+
+        <!-- titulo -->
+        <h1>🐍 Snake Game</h1>
+        
+        <!-- Botão de scores -->
+        <button class="btn-score" id="btn-score">scores</button>
+        
+        <!-- mostra o score atual -->
+        <div class="best-score">Best Score: <span id="best-score">0</span></div>
+        
+        <!-- melhor score -->
+        <div class="score-game">score: <span id="score-game">0</span></div>
+
+        <div class="snake-canvas">
+            <canvas id="snake-canvas" width="400" height="400"></canvas>
+
+            <div id="startScreen" class="overScreen">
+                
+                <h1>Comandos para Jogar</h1>
+                <p>use W,A,S,D ou as Setas</p>
+                <button class="btn" id="btn-iniciar">Inicar Game</button>
+            </div>
+
+            <div id="gameOverScreen" class="overScreen">
+                <h2>Game Over</h2>
+                <p>Sua Pontução: <span id="score-game">0</span></p>
+                <button class="btn" id="btn-restart">Jogar novamente</button>
+            </div>
+        </div>
+
+        <div class="instructions">Desvie das paredes e do próprio rabo!</div>
+    </div>
+    
+</body>
+</html>
